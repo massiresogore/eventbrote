@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block header %}
+
+    <h1>{{events |length}}Events Pages</h1>
+
+
+{{events |join(', ' ,' and ')}}
+  <ul>
+    {# <li>Symfony<li>
+    <li>python<li>
+    <li>django<li> #}
+    {% for event in events %}
+       <li>{{ event }}</li>
+    {% endfor %}
+  </ul>
+
+
+{% for letter in 'a'|upper..'z'|upper %}
+    * {{ letter }}
+{% endfor %}
+{% endblock header %}
