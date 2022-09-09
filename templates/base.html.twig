@@ -7,6 +7,7 @@
         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
+            <link rel="stylesheet" href="css/styles.css">
         {% endblock %}
 
         {% block javascripts %}
@@ -14,6 +15,20 @@
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+            <div class="main-block">
+                <nav>
+                    <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    </ul>
+                </nav>
+                <main>
+                    
+                    <header>{% block header %}{% endblock header %}</header>
+                    <section> {% block body %}{% endblock %}</section>
+                </main>
+
+                    <footer>Footer<footer>
+            </div>
     </body>
 </html>
