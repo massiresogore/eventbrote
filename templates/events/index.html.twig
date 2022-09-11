@@ -1,2 +1,9 @@
 {% extends 'base.html.twig' %}
 
+{% block header %}
+    {% for event in events %}
+       <li>{{ event }}</li>
+    {% endfor %}
+  </ul>
+
+{% endblock header %}
