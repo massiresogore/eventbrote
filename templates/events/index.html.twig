@@ -7,9 +7,6 @@
 
 {{events |join(', ' ,' and ')}}
   <ul class="nav-link">
-    {# <li>Symfony<li>
-    <li>python<li>
-    <li>django<li> #}
     {% for event in events %}
        <li>{{ event }}</li>
     {% endfor %}
