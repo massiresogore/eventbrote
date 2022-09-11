@@ -12,7 +12,8 @@ class EventsController extends AbstractController
     public function index(): Response
     {
 
-        $events = ['Symfony Conférence', 'Python Meetup', 'django Hackathon', 'Rails Conference'];
+
+
 
         return $this->render('/events/index.html.twig', compact('events'));
     }

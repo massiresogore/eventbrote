@@ -1,14 +1,2 @@
 {% extends 'base.html.twig' %}
 
-{% block header %}
-
-    <h1>{{events |length}} Events Pages</h1>
-
-
-{{events |join(', ' ,' and ')}}
-  <ul class="nav-link">
-    {% for event in events %}
-       <li>{{ event }}</li>
-    {% endfor %}
-  </ul>
-{% endblock header %}

@@ -14,6 +14,7 @@ body{
     grid-template-columns: 1fr;
     grid-template-rows: minmax(50px,70px ) 1fr minmax(50px,70px );
 }
+<<<<<<< HEAD
 ul{
     list-style-type: none;
     display: flex;
@@ -25,6 +26,11 @@ nav{
     display: grid;
     align-items: center;
     justify-content: center;
+=======
+
+nav{
+    /* background-color: aquamarine; */
+>>>>>>> origin/main
    
 }
 main{
