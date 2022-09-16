@@ -2,10 +2,12 @@
 
 
 {% block header %}
-  <ul>
-    {% for event in events %}
-       <li>{{ event.getName }}</li>
-    {% endfor %}
-  </ul>
+  {% if events is not empty  %}
+    <ul>
+      {% for event in events %}
+        <li>{{ event.getName }}</li>
+      {% endfor %}
+    </ul>
 
+  {% endif %}
 {% endblock header %}
